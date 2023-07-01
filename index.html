@@ -1,423 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <script
-      src="https://kit.fontawesome.com/83e2d6c4b1.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    <script src="https://kit.fontawesome.com/83e2d6c4b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
     <title>Dashboard</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <section class="header">
-      <div class="logo">
-        <i class="ri-sun-line"></i>
-        <p>LearningLight</p>
-      </div>
+        <div class="logo">
+            <i class="ri-sun-line"></i>
+            <p>LearningLight</p>
+        </div>
 
-      <div class="search--notification--profile">
-        <div class="search">
-          <button><i class="ri-search-2-line"></i></button>
-          <input type="text" placeholder="Search" />
+        <div class="searchNotificationProfile">
+            <div class="search">
+                <button><i class="ri-search-2-line"></i></button>
+                <input type="text" placeholder="Search" />
+            </div>
+            <div class="NotificationProfile">
+                <div class="picon bell">
+                    <i class="fa fa-bell" aria-hidden="true"></i>
+                </div>
+                <div class="picon profile">
+                    <img src="./images/user.png" alt="" />
+                </div>
+                <span>Debra Cooper</span>
+            </div>
         </div>
-        <div class="notification--profile">
-          <div class="picon bell">
-            <i class="fa fa-bell" aria-hidden="true"></i>
-          </div>
-          <div class="picon profile">
-            <img src="./images/user.png" alt="" />
-          </div>
-          <span>Debra Cooper</span>
-        </div>
-      </div>
     </section>
+
     <section class="main">
-      <div class="sidebar">
-        <ul class="sidebar--items">
-          <li>
-            <a href="#" id="active--link">
-              <span class="icon">
-                <i class="fa fa-home" aria-hidden="true"></i>
-              </span>
-              <span class="sidebar--item">Home</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon"
-                ><i class="fa fa-graduation-cap" aria-hidden="true"></i
-              ></span>
+        <div class="sidebar">
+            <ul class="sidebar--items">
+                <div class="sidebarTopItems">
+                    <div class="top" href="#">
+                        <a href="#" id="activeLink" class=""><i class="fa fa-home" aria-hidden="true"></i>
+                            <span id="sidebarItem">Home</span></a>
+                    </div>
+                    <div class="top" href="#">
+                        <a href="#" class=""><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                            <span id="sidebarItem">Courses</span></a>
+                    </div>
+                    <div class="top" href="#">
+                        <a href="#" class=""><i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            <span id="sidebarItem">Training</span></a>
+                    </div>
+                    <div class="top" href="#">
+                        <a href="#" class=""><i class="fa fa-pie-chart" aria-hidden="true"></i>
+                            <span id="sidebarItem">Statistics</span></a>
+                    </div>
+                    <div class="top" href="#">
+                        <a href="#" class=""><i class="fa fa-cog" aria-hidden="true"></i>
+                            <span id="sidebarItem">Settings</span></a>
+                    </div>
 
-              <span class="sidebar--item">Courses</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon"
-                ><i class="fa fa-lightbulb-o" aria-hidden="true"></i
-              ></span>
-              <span class="sidebar--item" style="white-space: nowrap"
-                >Training</span
-              >
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon"
-                ><i class="fa fa-pie-chart" aria-hidden="true"></i
-              ></span>
-              <span class="sidebar--item">Statistics</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="icon"
-                ><i class="fa fa-cog" aria-hidden="true"></i
-              ></span>
-              <span class="sidebar--item">Settings</span>
-            </a>
-          </li>
-        </ul>
-
-        <div class="divide"></div>
-
-        <ul class="sidebar--bottom-items">
-          <div>
-            <div class="bottom progress" href="#">
-              <span class=""
-                ><i class="fa fa-book" aria-hidden="true"></i>
-                <span id="sidebar--bottom--item">Homework</span></span
-              >
-
-              <i class="fa fa-long-arrow-right arrow" aria-hidden="true"></i>
-            </div>
-            <div class="progress">
-              <span class="progress-title"> Basics of Composition </span>
-              <progress value="80" max="100"></progress>
-              <div class="progress-details">
-                <span>4/5</span>
-                <span>80%</span>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="progress-title"> Typography Basics </span>
-              <progress value="60" max="100"></progress>
-              <div class="progress-details">
-                <span>3/5</span>
-                <span>60%</span>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="progress-title"> Color Basics </span>
-              <progress value="40" max="100"></progress>
-              <div class="progress-details">
-                <span>2/5</span>
-                <span>40%</span>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="progress-title"> Modular Mesh </span>
-              <progress value="60" max="100"></progress>
-              <div class="progress-details">
-                <span>3/5</span>
-                <span>60%</span>
-              </div>
-            </div>
-          </div>
-        </ul>
-      </div>
-      <div class="main--content">
-        <div class="overview">
-          <div class="title">
-            <h2 class="section--title">Overview</h2>
-            <select name="date" id="date" class="dropdown">
-              <option value="today">Today</option>
-              <option value="lastweek">Last Week</option>
-              <option value="lastmonth">Last Month</option>
-              <option value="lastyear">Last Year</option>
-              <option value="alltime">All Time</option>
-            </select>
-          </div>
-          <div class="cards">
-            <div class="card card-1">
-              <div class="card--data">
-                <div class="card--content">
-                  <h5 class="card--title">Total Doctors</h5>
-                  <h1>152</h1>
                 </div>
-                <i class="ri-user-2-line card--icon--lg"></i>
-              </div>
-              <div class="card--stats">
-                <span
-                  ><i class="ri-bar-chart-fill card--icon stat--icon"></i
-                  >65%</span
-                >
-                <span
-                  ><i class="ri-arrow-up-s-fill card--icon up--arrow"></i
-                  >10</span
-                >
-                <span
-                  ><i class="ri-arrow-down-s-fill card--icon down--arrow"></i
-                  >2</span
-                >
-              </div>
-            </div>
-            <div class="card card-2">
-              <div class="card--data">
-                <div class="card--content">
-                  <h5 class="card--title">Total Patients</h5>
-                  <h1>1145</h1>
-                </div>
-                <i class="ri-user-line card--icon--lg"></i>
-              </div>
-              <div class="card--stats">
-                <span
-                  ><i class="ri-bar-chart-fill card--icon stat--icon"></i
-                  >82%</span
-                >
-                <span
-                  ><i class="ri-arrow-up-s-fill card--icon up--arrow"></i
-                  >230</span
-                >
-                <span
-                  ><i class="ri-arrow-down-s-fill card--icon down--arrow"></i
-                  >45</span
-                >
-              </div>
-            </div>
-            <div class="card card-3">
-              <div class="card--data">
-                <div class="card--content">
-                  <h5 class="card--title">Schedule</h5>
-                  <h1>102</h1>
-                </div>
-                <i class="ri-calendar-2-line card--icon--lg"></i>
-              </div>
-              <div class="card--stats">
-                <span
-                  ><i class="ri-bar-chart-fill card--icon stat--icon"></i
-                  >27%</span
-                >
-                <span
-                  ><i class="ri-arrow-up-s-fill card--icon up--arrow"></i
-                  >31</span
-                >
-                <span
-                  ><i class="ri-arrow-down-s-fill card--icon down--arrow"></i
-                  >23</span
-                >
-              </div>
-            </div>
-            <div class="card card-4">
-              <div class="card--data">
-                <div class="card--content">
-                  <h5 class="card--title">Beds Available</h5>
-                  <h1>15</h1>
-                </div>
-                <i class="ri-hotel-bed-line card--icon--lg"></i>
-              </div>
-              <div class="card--stats">
-                <span
-                  ><i class="ri-bar-chart-fill card--icon stat--icon"></i
-                  >8%</span
-                >
-                <span
-                  ><i class="ri-arrow-up-s-fill card--icon up--arrow"></i
-                  >11</span
-                >
-                <span
-                  ><i class="ri-arrow-down-s-fill card--icon down--arrow"></i
-                  >2</span
-                >
-              </div>
-            </div>
-          </div>
+
+                <div class="divide"></div>
+
+                <ul class="sidebarBottomItems">
+                    <div>
+                        <div class="bottom progress" href="#">
+                            <span class=""><i class="fa fa-book" aria-hidden="true"></i>
+                                <span id="sidebarItem">Homework</span></span>
+                            <i class="fa fa-long-arrow-right arrow" aria-hidden="true"></i>
+                        </div>
+                        <div class="progress">
+                            <span class="progressTitle"> Basics of Composition </span>
+                            <progress value="80" max="100"></progress>
+                            <div class="progressDetails">
+                                <span>4/5</span>
+                                <span>80%</span>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span class="progressTitle"> Typography Basics </span>
+                            <progress value="60" max="100"></progress>
+                            <div class="progressDetails">
+                                <span>3/5</span>
+                                <span>60%</span>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span class="progressTitle"> Color Basics </span>
+                            <progress value="40" max="100"></progress>
+                            <div class="progressDetails">
+                                <span>2/5</span>
+                                <span>40%</span>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <span class="progressTitle"> Modular Mesh </span>
+                            <progress value="60" max="100"></progress>
+                            <div class="progressDetails">
+                                <span>3/5</span>
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
         </div>
-        <div class="doctors">
-          <div class="title">
-            <h2 class="section--title">Doctors</h2>
-            <div class="doctors--right--btns">
-              <select name="date" id="date" class="dropdown doctor--filter">
-                <option>Filter</option>
-                <option value="free">Free</option>
-                <option value="scheduled">Scheduled</option>
-              </select>
-              <button class="add"><i class="ri-add-line"></i>Add Doctor</button>
-            </div>
-          </div>
-          <div class="doctors--cards">
-            <a href="#" class="doctor--card">
-              <div class="img--box--cover">
-                <div class="img--box">
-                  <img src="assets/images/doctor1.jpg" alt="" />
-                </div>
-              </div>
-              <p class="free">Free</p>
-            </a>
-            <a href="#" class="doctor--card">
-              <div class="img--box--cover">
-                <div class="img--box">
-                  <img src="assets/images/doctor2.jpg" alt="" />
-                </div>
-              </div>
-              <p class="scheduled">Scheduled</p>
-            </a>
-            <a href="#" class="doctor--card">
-              <div class="img--box--cover">
-                <div class="img--box">
-                  <img src="assets/images/doctor3.jpg" alt="" />
-                </div>
-              </div>
-              <p class="scheduled">Scheduled</p>
-            </a>
-            <a href="#" class="doctor--card">
-              <div class="img--box--cover">
-                <div class="img--box">
-                  <img src="assets/images/doctor4.jpg" alt="" />
-                </div>
-              </div>
-              <p class="free">Free</p>
-            </a>
-            <a href="#" class="doctor--card">
-              <div class="img--box--cover">
-                <div class="img--box">
-                  <img src="assets/images/doctor5.jpg" alt="" />
-                </div>
-              </div>
-              <p class="scheduled">Scheduled</p>
-            </a>
-            <a href="#" class="doctor--card">
-              <div class="img--box--cover">
-                <div class="img--box">
-                  <img src="assets/images/doctor6.jpg" alt="" />
-                </div>
-              </div>
-              <p class="free">Free</p>
-            </a>
-            <a href="#" class="doctor--card">
-              <div class="img--box--cover">
-                <div class="img--box">
-                  <img src="assets/images/doctor7.jpg" alt="" />
-                </div>
-              </div>
-              <p class="scheduled">Scheduled</p>
-            </a>
-          </div>
-        </div>
-        <div class="recent--patients">
-          <div class="title">
-            <h2 class="section--title">Recent Patients</h2>
-            <button class="add"><i class="ri-add-line"></i>Add Doctor</button>
-          </div>
-          <div class="table">
-            <table>
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Date in</th>
-                  <th>Gender</th>
-                  <th>Age</th>
-                  <th>Status</th>
-                  <th>Settings</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Cameron Williamson</td>
-                  <td>30/07/2022</td>
-                  <td>Male</td>
-                  <td>61kg</td>
-                  <td class="pending">pending</td>
-                  <td>
-                    <span
-                      ><i class="ri-edit-line edit"></i
-                      ><i class="ri-delete-bin-line delete"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>George Washington</td>
-                  <td>30/07/2022</td>
-                  <td>Male</td>
-                  <td>54kg</td>
-                  <td class="confirmed">Confirmed</td>
-                  <td>
-                    <span
-                      ><i class="ri-edit-line edit"></i
-                      ><i class="ri-delete-bin-line delete"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>John Adams</td>
-                  <td>29/07/2022</td>
-                  <td>Male</td>
-                  <td>56kg</td>
-                  <td class="confirmed">Confirmed</td>
-                  <td>
-                    <span
-                      ><i class="ri-edit-line edit"></i
-                      ><i class="ri-delete-bin-line delete"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Thomas Jefferson</td>
-                  <td>29/07/2022</td>
-                  <td>Male</td>
-                  <td>11kg</td>
-                  <td class="rejected">Rejected</td>
-                  <td>
-                    <span
-                      ><i class="ri-edit-line edit"></i
-                      ><i class="ri-delete-bin-line delete"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>James Madison</td>
-                  <td>29/07/2022</td>
-                  <td>Male</td>
-                  <td>69kg</td>
-                  <td class="confirmed">Confirmed</td>
-                  <td>
-                    <span
-                      ><i class="ri-edit-line edit"></i
-                      ><i class="ri-delete-bin-line delete"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Andrew Jackson</td>
-                  <td>28/07/2022</td>
-                  <td>Male</td>
-                  <td>88kg</td>
-                  <td class="confirmed">Confirmed</td>
-                  <td>
-                    <span
-                      ><i class="ri-edit-line edit"></i
-                      ><i class="ri-delete-bin-line delete"></i
-                    ></span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
+        
     </section>
     <!-- <script src="./assets/js/main.js"></script> -->
-  </body>
+</body>
+
 </html>
