@@ -145,7 +145,6 @@ img {
 
 .sidebar .active {
   width: 103px;
-  /* overflow: hidden; */
 }
 
 .sidebar.active .sidebar--item {
@@ -160,6 +159,10 @@ a {
   text-decoration: none;
 }
 
+progress {
+  width: 100%;
+}
+
 .sidebarTopItems {
   padding: 30px 0;
 }
@@ -171,14 +174,14 @@ a {
   width: 100%;
 }
 
-.sidebar--items a {
+.sidebarItems a {
   display: flex;
   align-items: center;
   text-align: left;
   color: #000000ce;
 }
 
-.sidebar--items a:hover {
+.sidebarItems a:hover {
   color: #000;
   font-weight: 900;
 }
@@ -198,9 +201,11 @@ a {
   justify-content: space-between;
 }
 
-.bottom .arrow {
+.bottom .arrow,
+.topTeachersTitle .arrow {
   display: flex;
   align-items: center;
+  color: #5073fb;
 }
 
 .top,
@@ -216,9 +221,387 @@ a {
 .progressDetails {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .bottom i {
   color: #5073fb;
 }
 
+.sidebarItems li:last-child a {
+  margin-bottom: 0;
+}
+
+.icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* mainContent */
+.mainContent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: calc(100% - 300px);
+  padding: 0 40px;
+  overflow-y: scroll;
+  transition: 0.3s;
+}
+.mainContent.active {
+  width: calc(100% - 103px);
+}
+
+.titleOptions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.sectionTitle {
+  background-color: #f1f4f8;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 3px 8px;
+}
+
+.sectionTitle:nth-child(3) {
+  color: #fff;
+  background-color: #5073fb;
+}
+
+.artTheme {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.inclusiveDesignTrends {
+  flex: 2;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: left;
+}
+
+.inclusiveDesignTrends h2,
+.themeChat h2,
+.topTeachers h2 {
+  font-weight: 400;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.firstBox,
+.secondBox {
+  display: flex;
+  margin-top: 10px;
+}
+
+.firstBox {
+  flex-wrap: wrap;
+
+  gap: 20px;
+}
+
+.inclusive {
+  flex: 4;
+
+  background-color: #f1f4f8;
+  height: min-content;
+  border-radius: 15px;
+  padding: 25px 25px;
+}
+
+.designTrends {
+  flex: 2;
+  background-color: #f1f4f8;
+  border-radius: 15px;
+
+  padding: 25px 25px;
+}
+
+.designImage {
+  padding-top: 60px;
+}
+
+.secondBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+
+  height: max-content;
+}
+
+.themeChat {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: left;
+}
+
+.themeSpan {
+  color: #5073fb;
+  font-weight: 500;
+}
+
+.cardDetails {
+  background-color: #f1f4f8;
+
+  width: 41%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+.cardDetails img {
+  size: 20px;
+}
+
+.cardDetails span {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.cardTitle {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.imageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.time {
+  background-color: #dbdbdd;
+  border-radius: 6px;
+  padding: 4px;
+  color: #0c0b44;
+}
+
+.imageWrapper img {
+  width: 50%;
+}
+
+.imageIllustration {
+  position: relative;
+  width: 100%;
+}
+
+.cardImageWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.cardImageDetail {
+  margin-left: 4px;
+}
+
+.cardImage {
+  position: relative;
+  background-color: #0c0b44;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.videoTopTeachers {
+  margin-top: 20px;
+}
+
+.topTeachers {
+  width: 300px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: left;
+}
+
+.teacherWrapper {
+  width: 100%;
+}
+
+.topTeachersTitle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.teacherDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teacherImage {
+  position: relative;
+
+  background: rgb(3, 63, 63);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.teacherImageDetail {
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.teacherImageDetail p {
+  font-weight: 600;
+  color: rgb(5, 5, 56);
+}
+
+.teacherImageDetail span {
+  color: gray;
+}
+
+.videoTrendsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.videoTrends {
+  background-color: #5073fb;
+  border-radius: 15px;
+
+  padding: 15px;
+  color: #fff;
+}
+
+.videoTrends h5 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.videoImageDetail {
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+.videoImageDetail p {
+  font-weight: 500;
+}
+
+.videoImageDetail span {
+  font-weight: 100;
+}
+
+.effective {
+  background-color: #5073fb;
+  color: #fff;
+  height: 300px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.videoWrapper {
+  padding: 25px 0;
+}
+
+.videoTitle {
+  font-size: 18px;
+}
+
+.lessons {
+  padding-top: 22px;
+}
+
+.effectiveTime {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+/* responsive starts here */
+@media screen and (max-width: 1350px) {
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    padding-left: 30px;
+    width: fit-content;
+  }
+  .searchNotificationProfile {
+    padding: 0 20px;
+    margin-left: auto;
+  }
+  .mainContent {
+    padding: 0 20px;
+  }
+  .sidebar {
+    padding: 20px;
+  }
+  .sidebar.active {
+    width: 85px;
+  }
+  .mainContent.active {
+    width: calc(100% - 85px);
+  }
+}
+@media screen and (max-width: 590px) {
+  .search {
+    display: none;
+  }
+  .NotificationProfile {
+    margin-left: auto;
+  }
+  .searchNotificationProfile {
+    width: fit-content;
+  }
+  .sidebar {
+    transform: translateX(-100%);
+    z-index: 10;
+    background-color: #fff;
+  }
+  .sidebar.active {
+    transform: translateX(0);
+    width: 300px;
+  }
+  .sidebar.active .sidebar--item {
+    display: block;
+  }
+  .mainContent {
+    width: calc(100% - 0px);
+  }
+  .mainContent.active {
+    width: calc(100% - 0px);
+  }
+}
+@media screen and (max-width: 450px) {
+  .mainContent {
+    padding: 0 10px;
+  }
+  .logo {
+    padding-left: 10px;
+  }
+  .searchNotificationProfile {
+    padding: 0 10px;
+  }
+  .sidebar {
+    padding: 10px;
+  }
+}
