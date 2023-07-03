@@ -535,6 +535,14 @@ progress {
   justify-content: flex-end;
 }
 
+.effectiveTimeSec {
+  border-radius: 12px;
+  padding: 5px 10px;
+  background: rgba(9, 3, 63, 0.6);
+  color: #fff;
+  font-size: 12px;
+}
+
 /* responsive starts here */
 @media screen and (max-width: 1350px) {
 }
